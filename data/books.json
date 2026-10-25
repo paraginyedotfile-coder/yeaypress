@@ -12,9 +12,10 @@
     "isbn": "",
     "sampul": "",
     "tautanGoogleBooks": "",
-    "deskripsi": "Buku Modul Praktikum Komunikasi Bisnis merupakan buku pendamping yang dirancang untuk mendukung penggunaan buku ajar Komunikasi Bisnis dalam pelaksanaan 12 sesi praktikum. Modul ini memberikan panduan pembelajaran yang terstruktur dan aplikatif agar mahasiswa dapat memahami serta mempraktikkan berbagai konsep komunikasi bisnis dalam konteks akademik maupun dunia kerja. Materi praktikum diarahkan untuk mengembangkan kemampuan mahasiswa dalam menyampaikan pesan secara efektif, menyusun komunikasi bisnis tertulis, melakukan presentasi, berkomunikasi secara profesional, serta membangun keterampilan interpersonal yang mendukung aktivitas organisasi dan bisnis. Melalui latihan, tugas, dan kegiatan praktikum yang relevan, mahasiswa diharapkan mampu mengintegrasikan pemahaman teoretis dengan keterampilan praktis, meningkatkan kepercayaan diri, serta menerapkan prinsip komunikasi bisnis secara efektif, etis, dan profesional. Modul ini disusun oleh Dr. Abdul Yusuf, S.E., M.M., dari Program Studi Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Singaperbangsa Karawang, sebagai sarana pendukung pembelajaran yang berorientasi pada pengembangan kompetensi komunikasi bisnis mahasiswa.",
-    "sinopsis": "Buku Modul Praktikum Komunikasi Bisnis merupakan panduan praktis bagi mahasiswa dalam mengembangkan keterampilan komunikasi yang dibutuhkan di dunia bisnis dan organisasi. Disusun sebagai pendamping buku ajar Komunikasi Bisnis, modul ini dirancang untuk mendukung pelaksanaan pembelajaran dalam 12 sesi praktikum yang sistematis, terarah, dan aplikatif. Melalui berbagai kegiatan praktikum, mahasiswa diarahkan untuk mengasah kemampuan berkomunikasi secara lisan dan tertulis, menyusun pesan bisnis, melakukan presentasi, membangun komunikasi interpersonal, serta menerapkan etika komunikasi dalam berbagai situasi profesional. Pendekatan praktikum memungkinkan mahasiswa tidak hanya memahami konsep komunikasi bisnis secara teoretis, tetapi juga mengimplementasikannya dalam bentuk latihan dan pemecahan masalah yang relevan dengan kebutuhan dunia kerja. Modul ini diharapkan menjadi sarana pembelajaran yang membantu mahasiswa meningkatkan kepercayaan diri, ketepatan dalam menyampaikan pesan, kemampuan berinteraksi secara profesional, serta kecakapan membangun hubungan bisnis yang efektif. Dengan demikian, Modul Praktikum Komunikasi Bisnis dapat menjadi referensi pendukung bagi mahasiswa dalam mempersiapkan diri menghadapi tantangan komunikasi di lingkungan kerja dan dunia usaha. Dr. Abdul Yusuf, S.E., M.M. Program Studi Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Singaperbangsa Karawang, 2026"
-   
+    "deskripsi": "…(teks deskripsi Anda)…",
+    "sinopsis": "…(teks sinopsis Anda)…"
+  },
+  {
     "slug": "novel",
     "judul": "hujan berdesis deras",
     "penulis": "otong",
@@ -29,7 +30,8 @@
     "tautanGoogleBooks": "",
     "deskripsi": "pejuangan melawan desrasnya hujan.",
     "sinopsis": "novel perjalanan singkat pembelajar."
-
+  },
+  {
     "slug": "novel2",
     "judul": "kemarau panjang",
     "penulis": "otong",
@@ -37,7 +39,7 @@
     "tahun": 2026,
     "halaman": 242,
     "harga": 75000,
-    "warna": "koral",
+    "warna": "biru",
     "status": "Dalam proses terbit",
     "isbn": "",
     "sampul": "",
