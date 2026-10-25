@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+<section class="bagian">
+  <div class="wrap sempit">
+    <h1 class="judul-hal">Kirim naskah</h1>
+    <p class="lead">Yeay menerima naskah buku pendidikan dan novel. Redaksi membaca setiap kiriman dan menghubungi penulis lewat email.</p>
+    <h2>Yang perlu disiapkan</h2>
+    <ul>
+      <li>Judul dan jenis naskah (pendidikan atau novel)</li>
+      <li>Sinopsis atau ringkasan isi</li>
+      <li>Contoh bab atau naskah lengkap</li>
+      <li>Nama penulis dan alamat email yang aktif</li>
+    </ul>
+    <h2>Cara mengirim</h2>
+    <p>
+      <% if (site.formNaskah) { %>
+        Isi formulir pengiriman naskah berikut.
+      <% } else { %>
+        Kirim berkas naskah melalui email ke <a href="mailto:<%= site.email %>"><%= site.email %></a>.
+      <% } %>
+    </p>
+    <% if (site.formNaskah) { %>
+      <p class="aksi"><a class="tombol" href="<%= site.formNaskah %>" target="_blank" rel="noopener">Buka formulir naskah</a></p>
+    <% } %>
+  </div>
+</section>
+<%- include('partials/foot') %>

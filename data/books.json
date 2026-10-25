@@ -1,0 +1,36 @@
+[
+  {
+    
+    "slug": "buku-pendidikan",
+    "judul": " Pengantar Manajemen Keuangan",
+    "penulis": "YRH",
+    "kategori": "Pendidikan",
+    "tahun": 2026,
+    "halaman": 200,
+    "harga": 8888,
+    "warna": "ungu",
+    "status": "Dalam proses terbit",
+    "isbn": "",
+    "sampul": "",
+    "tautanGoogleBooks": "",
+    "deskripsi": "Satu atau dua kalimat yang menjelaskan jenis buku dan pembacanya.",
+    "sinopsis": "bukunya menjelaskan dasar dasar mankeu."
+  },
+  {
+    
+    "slug": "novel",
+    "judul": "hujan berdesis",
+    "penulis": "otong",
+    "kategori": "Novel",
+    "tahun": 2026,
+    "halaman": 240,
+    "harga": 85000,
+    "warna": "koral",
+    "status": "Dalam proses terbit",
+    "isbn": "",
+    "sampul": "",
+    "tautanGoogleBooks": "",
+    "deskripsi": "pejuangan melawan desrasnya hujan.",
+    "sinopsis": "novel perjalanan singkat pembelajar."
+  }
+]

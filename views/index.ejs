@@ -1,0 +1,45 @@
+<%- include('partials/head') %>
+<section class="hero">
+  <div class="wrap">
+    <h1>Buku bagus pantas dirayakan.</h1>
+    <p class="lead">Yeay menerbitkan buku pendidikan dan novel dari penulis Indonesia. Buku-buku kami dijual lewat Google Play Buku.</p>
+    <p class="aksi">
+      <a class="tombol" href="/katalog/">Lihat katalog</a>
+      <a class="tombol kosong" href="/naskah/">Kirim naskah</a>
+    </p>
+  </div>
+  <ul class="rak" aria-label="Rak buku Yeay">
+    <% buku.slice(0, 9).forEach((b, i) => { %>
+      <li class="tone-<%= b.warna %> t<%= i % 4 %>"><a href="/buku/<%= b.slug %>/"><span><%= b.judul %></span></a></li>
+    <% }) %>
+  </ul>
+</section>
+
+<section class="bagian">
+  <div class="wrap">
+    <h2>Terbitan terbaru</h2>
+    <div class="grid-buku">
+      <% terbaru.forEach((b) => { %><%- include('partials/kartu', { b }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="bagian jeda">
+  <div class="wrap dua">
+    <h2>Jelajahi menurut jenis</h2>
+    <ul class="daftar-kat">
+      <% hitung.forEach((k) => { %>
+        <li><a href="/katalog/?kategori=<%= k.nama %>"><%= k.nama %> <small><%= k.jumlah %> judul</small></a></li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+
+<section class="ajakan">
+  <div class="wrap">
+    <h2>Punya naskah yang ingin diterbitkan?</h2>
+    <p>Kami menerima naskah buku pendidikan dan novel. Baca ketentuan pengiriman dan kirim naskah Anda.</p>
+    <p><a class="tombol gelap" href="/naskah/">Kirim naskah</a></p>
+  </div>
+</section>
+<%- include('partials/foot') %>

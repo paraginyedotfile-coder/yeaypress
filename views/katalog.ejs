@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+<section class="bagian">
+  <div class="wrap">
+    <h1 class="judul-hal">Katalog buku</h1>
+    <form class="cari" id="form-cari" action="/katalog/" method="get" role="search">
+      <label for="q">Cari judul atau penulis</label>
+      <div class="baris">
+        <input id="q" name="q" type="search" maxlength="80">
+        <button class="tombol" type="submit">Cari</button>
+      </div>
+    </form>
+    <nav class="saring" aria-label="Saring menurut jenis">
+      <a href="/katalog/" data-kat="" aria-current="page">Semua</a>
+      <% kategoriSemua.forEach((k) => { %><a href="/katalog/?kategori=<%= k %>" data-kat="<%= k %>"><%= k %></a><% }) %>
+    </nav>
+    <p class="hasil" id="hasil" aria-live="polite"><%= buku.length %> buku ditemukan</p>
+    <div class="grid-buku">
+      <% buku.forEach((b) => { %><%- include('partials/kartu', { b }) %><% }) %>
+    </div>
+    <p class="kosong-info" id="kosong" hidden>Belum ada buku yang cocok. Coba kata kunci lain atau <a href="/katalog/">lihat semua buku</a>.</p>
+  </div>
+</section>
+<%- include('partials/foot') %>

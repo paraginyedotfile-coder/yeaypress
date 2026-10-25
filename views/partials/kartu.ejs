@@ -1,0 +1,13 @@
+<article class="kartu" data-kategori="<%= b.kategori %>" data-teks="<%= (b.judul + ' ' + b.penulis).toLowerCase() %>">
+  <a class="sampul <%= b.sampul ? 'foto' : 'tone-' + b.warna %>" href="/buku/<%= b.slug %>/" tabindex="-1" aria-hidden="true">
+    <% if (b.sampul) { %>
+      <img src="/sampul/<%= b.sampul %>" alt="Sampul buku <%= b.judul %>" width="400" height="600" loading="lazy">
+    <% } else { %>
+      <span class="s-judul"><%= b.judul %></span>
+      <span class="s-penulis"><%= b.penulis %></span>
+    <% } %>
+  </a>
+  <h3><a href="/buku/<%= b.slug %>/"><%= b.judul %></a></h3>
+  <p class="penulis"><%= b.penulis %></p>
+  <p class="harga"><%= rupiah(b.harga) %></p>
+</article>

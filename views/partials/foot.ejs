@@ -1,0 +1,23 @@
+</main>
+<footer class="kaki">
+  <div class="wrap kolom">
+    <div>
+      <p class="logo besar">yeay<span>!</span></p>
+      <p>Penerbit buku pendidikan dan novel.</p>
+    </div>
+    <nav aria-label="Menu kaki">
+      <a href="/katalog/">Katalog</a>
+      <a href="/naskah/">Kirim naskah</a>
+      <a href="/tentang/">Tentang</a>
+    </nav>
+    <div>
+      <p><a href="mailto:<%= site.email %>"><%= site.email %></a></p>
+      <% if (site.wa) { %><p><a href="https://wa.me/<%= site.wa %>">WhatsApp</a></p><% } %>
+      <p><%= site.kota %></p>
+    </div>
+  </div>
+  <p class="wrap hak">&copy; <%= new Date().getFullYear() %> Yeay Press. Seluruh hak dilindungi.</p>
+</footer>
+<% if (skrip) { %><script src="/js/<%= skrip %>" defer></script><% } %>
+</body>
+</html>

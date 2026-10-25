@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+<section class="bagian">
+  <div class="wrap sempit">
+    <h1 class="judul-hal">Tentang Yeay</h1>
+    <p class="lead">Yeay adalah penerbit buku Indonesia yang berfokus pada buku pendidikan dan novel, berkedudukan di <%= site.kota %>.</p>
+    <h2>Yang kami terbitkan</h2>
+    <p>Buku pendidikan untuk pembelajaran di perguruan tinggi dan sekolah, serta novel dari penulis Indonesia. Setiap naskah melewati penyuntingan, penataan isi, dan perancangan sampul sebelum terbit.</p>
+    <h2>Cara memperoleh buku</h2>
+    <p>Buku Yeay dijual lewat Google Play Buku. Tautan pembelian tersedia pada halaman setiap buku di <a href="/katalog/">katalog</a>.</p>
+    <h2>Untuk penulis</h2>
+    <p>Naskah dapat dikirim kapan saja. Ketentuannya ada pada halaman <a href="/naskah/">kirim naskah</a>.</p>
+    <h2>Hubungi kami</h2>
+    <p>Email: <a href="mailto:<%= site.email %>"><%= site.email %></a><% if (site.wa) { %><br>WhatsApp: <a href="https://wa.me/<%= site.wa %>">hubungi lewat WhatsApp</a><% } %><br>Kota: <%= site.kota %></p>
+  </div>
+</section>
+<%- include('partials/foot') %>

@@ -1,0 +1,13 @@
+{
+  "name": "yeay-id",
+  "version": "2.0.0",
+  "description": "Situs statis penerbit Yeay (yeay.id)",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.js",
+    "build:contoh": "node build.js --contoh",
+    "preview": "node preview.js"
+  },
+  "dependencies": { "ejs": "^3.1.10" }
+}

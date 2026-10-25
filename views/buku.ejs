@@ -1,0 +1,47 @@
+<%- include('partials/head') %>
+<section class="bagian">
+  <div class="wrap detail">
+    <% if (b.sampul) { %>
+      <div class="sampul besar foto"><img src="/sampul/<%= b.sampul %>" alt="Sampul buku <%= b.judul %>" width="400" height="600"></div>
+    <% } else { %>
+      <div class="sampul besar tone-<%= b.warna %>" role="img" aria-label="Sampul buku <%= b.judul %>">
+        <span class="s-judul"><%= b.judul %></span>
+        <span class="s-penulis"><%= b.penulis %></span>
+      </div>
+    <% } %>
+    <div class="info">
+      <p class="jalur"><a href="/katalog/">Katalog</a> / <a href="/katalog/?kategori=<%= b.kategori %>"><%= b.kategori %></a></p>
+      <h1><%= b.judul %></h1>
+      <p class="oleh">oleh <%= b.penulis %></p>
+      <p class="harga besar"><%= rupiah(b.harga) %></p>
+      <p class="sinopsis"><strong><%= b.deskripsi %></strong></p>
+      <h2 class="sub">Sinopsis</h2>
+      <p class="sinopsis"><%= b.sinopsis %></p>
+      <dl class="spek">
+        <div><dt>Jenis</dt><dd><%= b.kategori %></dd></div>
+        <div><dt>Tahun terbit</dt><dd><%= b.tahun %></dd></div>
+        <div><dt>Tebal</dt><dd><%= b.halaman %> halaman</dd></div>
+        <div><dt>ISBN</dt><dd><%= b.isbn ? b.isbn : 'dalam proses' %></dd></div>
+        <div><dt>Status</dt><dd><%= b.status %></dd></div>
+      </dl>
+      <p class="aksi">
+        <% if (b.tautanGoogleBooks) { %>
+          <a class="tombol" href="<%= b.tautanGoogleBooks %>" target="_blank" rel="noopener">Beli di Google Play Buku</a>
+        <% } else { %>
+          <span class="catatan">Segera tersedia di Google Play Buku.</span>
+        <% } %>
+      </p>
+    </div>
+  </div>
+</section>
+<% if (terkait.length) { %>
+<section class="bagian jeda">
+  <div class="wrap">
+    <h2>Buku <%= b.kategori.toLowerCase() %> lainnya</h2>
+    <div class="grid-buku">
+      <% terkait.forEach((x) => { %><%- include('partials/kartu', { b: x }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+<%- include('partials/foot') %>
