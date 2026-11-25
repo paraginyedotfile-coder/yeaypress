@@ -83,27 +83,27 @@ const terbaru = [...buku].sort((a, b) => b.tahun - a.tahun).slice(0, 4);
 const hitung = KATEGORI.map((k) => ({ nama: k, jumlah: buku.filter((b) => b.kategori === k).length }));
 
 halaman('index.html', 'index', {
-  title: 'Yeay | Penerbit buku pendidikan dan novel',
-  desc: 'Yeay menerbitkan buku pendidikan dan novel dari penulis Indonesia.',
+  title: `${site.nama} | Penerbit buku pendidikan dan novel`,
+  desc: `${site.nama} menerbitkan buku pendidikan dan novel dari penulis Indonesia.`,
   buku, terbaru, hitung,
 });
 halaman('katalog/index.html', 'katalog', {
-  title: 'Katalog buku | Yeay',
-  desc: 'Daftar buku pendidikan dan novel terbitan Yeay.',
+  title: `Katalog buku | ${site.nama}`,
+  desc: `Daftar buku pendidikan dan novel terbitan ${site.nama}.`,
   buku, skrip: 'katalog.js',
 });
 buku.forEach((b) => {
   const terkait = buku.filter((x) => x.kategori === b.kategori && x.slug !== b.slug).slice(0, 4);
   halaman(`buku/${b.slug}/index.html`, 'buku', {
-    title: `${b.judul} | Yeay`,
+    title: `${b.judul} | ${site.nama}`,
     desc: b.deskripsi.slice(0, 155),
     b, terkait,
   });
 });
-halaman('tentang/index.html', 'tentang', { title: 'Tentang Yeay', desc: 'Profil penerbit Yeay dan cara menghubungi redaksi.' });
-halaman('naskah/index.html', 'naskah', { title: 'Kirim naskah | Yeay', desc: 'Cara mengirim naskah buku pendidikan atau novel ke redaksi Yeay.' });
+halaman('tentang/index.html', 'tentang', { title: `Tentang ${site.nama}`, desc: `Profil penerbit ${site.nama} dan cara menghubungi redaksi.` });
+halaman('naskah/index.html', 'naskah', { title: `Kirim naskah | ${site.nama}`, desc: `Cara mengirim naskah buku pendidikan atau novel ke redaksi ${site.nama}.` });
 halaman('404.html', 'galat', {
-  title: 'Halaman tidak ditemukan | Yeay', desc: '', kode: 404,
+  title: `Halaman tidak ditemukan | ${site.nama}`, desc: '', kode: 404,
   pesan: 'Halaman yang Anda cari tidak ada atau sudah dipindahkan.',
 });
 

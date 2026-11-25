@@ -1,7 +1,7 @@
 {
   "name": "yeay-id",
   "version": "2.0.0",
-  "description": "Situs statis penerbit Yeay (yeay.id)",
+  "description": "Situs statis penerbit Yakin Epik Andal Yahud",
   "private": true,
   "engines": { "node": ">=18" },
   "scripts": {

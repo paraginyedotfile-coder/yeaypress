@@ -1,4 +1,4 @@
-# Situs Penerbit Yeay Press (yeaypress.my.id)
+# Situs Penerbit Yakin Epik Andal Yahud (yeaypress.my.id)
 
 Situs statis untuk penerbit buku pendidikan dan novel. Buku dijual lewat Google Play Buku; setiap halaman buku memuat tombol ke halaman buku di sana.
 
