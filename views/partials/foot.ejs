@@ -2,7 +2,7 @@
 <footer class="kaki">
   <div class="wrap kolom">
     <div>
-      <p class="logo besar">yeay<span>!</span></p>
+      <p class="logo besar"><%= site.nama %></p>
       <p>Penerbit buku pendidikan dan novel.</p>
     </div>
     <nav aria-label="Menu kaki">
@@ -16,7 +16,7 @@
       <p><%= site.kota %></p>
     </div>
   </div>
-  <p class="wrap hak">&copy; <%= new Date().getFullYear() %> Yeay Press. Seluruh hak dilindungi.</p>
+  <p class="wrap hak">&copy; <%= new Date().getFullYear() %> <%= site.nama %>. Seluruh hak dilindungi.</p>
 </footer>
 <% if (skrip) { %><script src="/js/<%= skrip %>" defer></script><% } %>
 </body>
