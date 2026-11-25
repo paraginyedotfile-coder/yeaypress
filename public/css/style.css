@@ -25,9 +25,9 @@ p{margin:0 0 1em}
 /* kepala & kaki */
 .kepala{background:var(--kuning);border-bottom:var(--garis)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0;flex-wrap:wrap}
-.logo{font-family:var(--tampil);font-weight:800;font-size:2rem;letter-spacing:-.04em;text-decoration:none;line-height:1}
+.logo{font-family:var(--tampil);font-weight:800;font-size:1.35rem;letter-spacing:-.02em;text-decoration:none;line-height:1}
 .logo span{color:var(--koral)}
-.logo.besar{font-size:2.6rem;margin-bottom:.4rem}
+.logo.besar{font-size:1.8rem;margin-bottom:.4rem}
 .kepala nav{display:flex;gap:1.4rem;font-family:var(--tampil);font-weight:600}
 .kepala nav a{text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
 .kepala nav a:hover{border-color:var(--tinta)}
@@ -114,6 +114,8 @@ textarea{resize:vertical}
 .oleh{font-size:1.2rem;margin-bottom:.4rem}
 .harga.besar{font-size:1.8rem;margin:0 0 1.2rem}
 .sinopsis{max-width:60ch}
+.topik{max-width:60ch;margin:.4rem 0 0;padding-left:1.2rem}
+.topik li{margin:.2rem 0}
 .spek{display:flex;flex-wrap:wrap;gap:1rem 2.2rem;margin:1.6rem 0 0}
 .spek div{border-top:var(--garis);padding-top:.5rem;min-width:7rem}
 .spek dt{font:600 .9rem var(--tampil)}
