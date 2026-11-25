@@ -17,10 +17,18 @@
       <p class="sinopsis"><strong><%= b.deskripsi %></strong></p>
       <h2 class="sub">Sinopsis</h2>
       <p class="sinopsis"><%= b.sinopsis %></p>
+      <% if (b.topik && b.topik.length) { %>
+        <h2 class="sub">Pokok bahasan</h2>
+        <ul class="topik">
+          <% b.topik.forEach((t) => { %><li><%= t %></li><% }) %>
+        </ul>
+      <% } %>
       <dl class="spek">
+        <div><dt>Penerbit</dt><dd><%= site.nama %></dd></div>
         <div><dt>Jenis</dt><dd><%= b.kategori %></dd></div>
         <div><dt>Tahun terbit</dt><dd><%= b.tahun %></dd></div>
         <div><dt>Tebal</dt><dd><%= b.halaman %> halaman</dd></div>
+        <% if (b.ukuran) { %><div><dt>Ukuran</dt><dd><%= b.ukuran %></dd></div><% } %>
         <div><dt>ISBN</dt><dd><%= b.isbn ? b.isbn : 'dalam proses' %></dd></div>
         <div><dt>Status</dt><dd><%= b.status %></dd></div>
       </dl>
